@@ -37,6 +37,7 @@ This project replicates the core layout and functionality of our university webs
 1. Clone the repository:  
    ```bash
    git clone https://github.com/AzeemHusain123/university-website-clone.git
-2.Navigate into the folder and open index.html in your web browser.
+   
+2. Navigate into the folder and open index.html in your web browser.
 
-3.Explore the other pages via the navigation menu in the browser.
+3. Explore the other pages via the navigation menu in the browser.
