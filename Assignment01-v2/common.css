@@ -1,0 +1,295 @@
+/* common.css - Common styles for all pages */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header with Logo */
+.header-with-logo {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.main-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #57564F;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: #17135a;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-grow: 1;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.main-nav a:hover {
+    color: #ffcc00;
+}
+
+.main-nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: #ffcc00;
+}
+
+/* Announcement Banner */
+.announcement-banner {
+    background-color: #e6f7ff;
+    border-bottom: 1px solid #bae7ff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.announcement-banner p {
+    margin: 5px 0;
+    color: #005792;
+    font-weight: 500;
+}
+
+/* Section Headings */
+h2 {
+    color: #1a3a5f;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffcc00;
+    text-align: center;
+}
+
+h3 {
+    color: #2c5282;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.apply-btn, .view-more, .view-details, .learn-more {
+    display: inline-block;
+    background-color: #ec1414;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.apply-btn:hover,.view-details:hover, .learn-more:hover {
+    background-color: #5f1a1a;
+}
+
+.view-more:hover{
+    background-color: #1a3a5f;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.192);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffcc00;
+    color: #1a3a5f;
+}
+
+/* Add these responsive styles to your common.css */
+
+/* Mobile menu toggle (add to HTML too) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #1a3a5f;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Responsive navigation */
+@media (max-width: 992px) {
+    .header-with-logo {
+        flex-wrap: wrap;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main-nav.active {
+        display: flex;
+    }
+    
+    .main-nav a {
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .top-nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .top-nav a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-logo {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 10px;
+    }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

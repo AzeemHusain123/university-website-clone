@@ -1,0 +1,371 @@
+/* about.css - Specific styles for the About page */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(26, 58, 95, 0.1), rgba(26, 58, 95, 0.1)), url("./building2.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.page-header p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Overview Section */
+.overview {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.overview h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #2c5282;
+}
+
+.overview p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #444;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Messages Section */
+.messages {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.message-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.message-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.message-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.message-content h2 {
+    color: #1a3a5f;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.message-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    color: #ec1414;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.message-image {
+    flex: 1;
+}
+
+.message-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Vision and Values Section */
+.vision-values {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.vision {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.vision h2 {
+    color: #1a3a5f;
+    margin-bottom: 20px;
+}
+
+.vision p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.values h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a3a5f;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f8f9fa;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.value-item h3 {
+    color: #1a3a5f;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Goals Section */
+.goals {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.goals h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a3a5f;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.goal-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.goal-item:hover {
+    transform: translateY(-8px);
+}
+
+.goal-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.goal-item h3 {
+    color: #1a3a5f;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.goal-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Green Campus Section */
+.green-campus {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.campus-content {
+    margin-bottom: 40px;
+}
+
+.campus-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a3a5f;
+}
+
+.campus-content p {
+    line-height: 1.8;
+    color: #444;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.campus-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.campus-gallery img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Strengths Section */
+.strengths {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.strengths h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a3a5f;
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.strength-item {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.strength-item:hover {
+    transform: translateY(-5px);
+}
+
+.strength-item h3 {
+    color: #1a3a5f;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.strength-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .message-card,
+    .message-card.reverse {
+        flex-direction: column;
+    }
+    
+    .message-content {
+        padding: 30px;
+    }
+    
+    .message-image {
+        height: 300px;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 20px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-header p {
+        font-size: 1.1rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .campus-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .message-content {
+        padding: 20px;
+    }
+    
+    .message-content h2 {
+        font-size: 20px;
+    }
+    
+    .value-item, .goal-item, .strength-item {
+        padding: 20px 15px;
+    }
+}

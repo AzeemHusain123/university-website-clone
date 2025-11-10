@@ -1,0 +1,152 @@
+/* Animation for stats */
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stat {
+    animation: countUp 1s ease-out;
+}
+
+.stat:nth-child(1) { animation-delay: 0.1s; }
+.stat:nth-child(2) { animation-delay: 0.3s; }
+.stat:nth-child(3) { animation-delay: 0.5s; }
+.stat:nth-child(4) { animation-delay: 0.7s; }
+
+/* Responsive adjustments for homepage */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 20px;
+        min-height: 400px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .news-events-container,
+    .insights-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .international-with-image {
+        background-attachment: scroll;
+        flex-direction: column-reverse;
+    }
+    
+    .admissions-with-image,
+    .about-with-video {
+        flex-direction: column;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .admissions-content h2,
+    .about-content h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .stats {
+        gap: 10px;
+    }
+    
+    .stat {
+        min-width: 120px;
+        padding: 15px 10px;
+    }
+    
+    .stat h3 {
+        font-size: 28px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-with-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .top-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .event {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .event {
+        flex: 1 1 calc(50% - 20px); /* 2 per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .event {
+        flex: 1 1 100%; /* 1 per row */
+    }
+}

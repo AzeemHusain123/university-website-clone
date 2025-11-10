@@ -1,0 +1,694 @@
+/* home.css - Specific styles for PAF-IAST homepage */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(26, 58, 95, 0.2), rgba(26, 58, 95, 0.2)), url("./paf-iast.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero img {
+    display: none; /* Hide the base64 image */
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    max-width: 900px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-weight: 300;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1a3a5f;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.highlights > p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/* News & Events Section */
+.news-events {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.news-events h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #2c5282;
+}
+
+/* Container for Events */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Event Card */
+.event {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Event Image */
+.event img {
+    width: 100%;
+    height:fit-content; /* fixed height for neatness */
+    object-fit: cover; /* keeps image ratio */
+}
+
+/* Event Date */
+.event-date {
+    background-color: #2c5282;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px;
+    width: 70px;
+    align-self: flex-start;
+}
+
+.event-date .day {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.event-date .month {
+    font-size: 14px;
+    display: block;
+}
+
+/* Event Details */
+.event-details {
+    padding: 0 15px 15px 15px;
+    text-align: left;
+}
+
+.event-details h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.event-details h3 a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.event-details h3 a:hover {
+    color: #1a3a5f;
+    text-decoration: underline;
+}
+
+.event-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* View More Link */
+.news-events .view-more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #2c5282;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.news-events .view-more:hover {
+    background: #1a3a5f;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .event {
+        flex: 1 1 calc(50% - 20px); /* 2 per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .event {
+        flex: 1 1 100%; /* 1 per row */
+    }
+}
+
+
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    padding: 20px;
+    min-width: 150px;
+}
+
+.stat h3 {
+    font-size: 36px;
+    color: #2c5282;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #666;
+    font-weight: 500;
+}
+
+/* Insights Section */
+.insights {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.insights h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #2c5282;
+}
+
+/* Insights Container */
+.insights-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Insight Card */
+.insight {
+    flex: 1 1 calc(33.333% - 20px); /* 3 per row */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.insight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Insight Image */
+.insight img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Date */
+.insight .date {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 15px 0;
+    text-align: left;
+}
+
+/* Title */
+.insight h3 {
+    font-size: 18px;
+    margin: 10px 15px 15px;
+    text-align: left;
+}
+
+.insight h3 a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.insight h3 a:hover {
+    color: #1a3a5f;
+    text-decoration: underline;
+}
+
+/* View More Link */
+.insights .view-more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #2c5282;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.insights .view-more:hover {
+    background: #1a3a5f;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .insight {
+        flex: 1 1 calc(50% - 20px); /* 2 per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .insight {
+        flex: 1 1 100%; /* 1 per row */
+    }
+}
+
+
+/* Collaborations Section */
+.collaborations {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.collaboration-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.collaboration-logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collaboration-logos img {
+    max-width: 120px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* Admissions Section with Image */
+.admissions-with-image {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #e6f7ff;
+}
+
+.admissions-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.admissions-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.admissions-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.admissions-content h2 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.admissions-content p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Insights Section */
+.insights {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.insights-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.insight {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    padding: 0;
+    border-left: none;
+}
+
+.insight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.insight img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.insight-content {
+    padding: 20px;
+}
+
+.insights .view-more {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* International with Image Section */
+.international-with-image {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://paf-iast.edu.pk/wp-content/uploads/2021/04/international-students.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.international-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.international-image {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.international-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    padding: 30px 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f7ff;
+    border-radius: 50%;
+}
+
+.feature-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.feature h3 {
+    margin: 15px 0;
+    color: #1a3a5f;
+}
+
+.feature p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* About with Video Section */
+.about-with-video {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.about-content h2 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.about-video {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-video iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 315px;
+}
+
+.last-updated {
+    font-style: italic;
+    color: #666;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Add these responsive styles to your home.css */
+
+/* Hero section responsiveness */
+@media (max-width: 992px) {
+    .hero {
+        padding: 80px 20px;
+        min-height: 400px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 15px;
+        min-height: 350px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Stats section responsiveness */
+@media (max-width: 768px) {
+    .stats {
+        gap: 15px;
+    }
+    
+    .stat {
+        min-width: 120px;
+        padding: 15px;
+    }
+    
+    .stat h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .stat {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Events and Insights responsiveness improvements */
+@media (max-width: 768px) {
+    .event, .insight {
+        flex: 1 1 100%;
+    }
+    
+    .event img, .insight img {
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+/* Admissions section responsiveness */
+@media (max-width: 992px) {
+    .admissions-with-image {
+        flex-direction: column;
+    }
+    
+    .admissions-image, .admissions-content {
+        padding: 15px;
+    }
+}
+
+/* International section responsiveness */
+@media (max-width: 992px) {
+    .international-with-image {
+        flex-direction: column-reverse;
+    }
+    
+    .international-content, .international-image {
+        padding: 20px;
+    }
+}
+
+/* Features section responsiveness */
+@media (max-width: 992px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About with video responsiveness */
+@media (max-width: 992px) {
+    .about-with-video {
+        flex-direction: column;
+    }
+    
+    .about-content, .about-video {
+        padding: 20px;
+    }
+    
+    .about-video iframe {
+        height: 250px;
+    }
+}
